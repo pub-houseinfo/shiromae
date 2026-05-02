@@ -9,8 +9,8 @@
 
 ## 公開URL
 
-- **GitHub Pages**: https://pub-houseinfo.github.io/siromae/
-- **本番ドメイン**: （未設定）
+- **メイン**: https://pub.houseinfo.jp/shiromae/
+- **GitHub Pages（フォールバック）**: https://pub-houseinfo.github.io/shiromae/
 
 ## 施設概要
 
@@ -30,7 +30,7 @@
 シングルページ・縦長スクロール構成（LP風HP）。
 
 ```
-siromae/
+shiromae/
 ├── index.html          ← メインHTML（CSS・JSはインライン）
 ├── images/             ← 画像素材
 │   ├── hero-castle-sunset.jpg     夕景の姫路城（提供：姫路市フォトバンク）
