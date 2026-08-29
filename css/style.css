@@ -330,7 +330,7 @@ a { color: inherit; text-decoration: none; }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('images/hero-castle-sunset.jpg');
+  background-image: url('../images/hero-castle-sunset.jpg');
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -1296,7 +1296,7 @@ a { color: inherit; text-decoration: none; }
 .surr-cell.span-2row { grid-row: span 2; }
 
 .surr-cell.castle {
-  background-image: url('images/hero-castle-sunset.jpg');
+  background-image: url('../images/hero-castle-sunset.jpg');
   background-size: cover;
   background-position: center;
 }
