@@ -109,13 +109,15 @@ a { color: inherit; text-decoration: none; }
 
 .site-header.dark .brand { color: var(--c-washi); }
 
-/* ロゴSVG共通 */
+/* ロゴ共通（実ロゴ画像をマスクとして敷き、色は currentColor が決める） */
 .logo-svg {
   display: block;
-  height: auto;
   width: auto;
+  aspect-ratio: 69 / 14;
+  background-color: currentColor;
+  -webkit-mask: url(../images/logo-besso-shiromae.png) no-repeat center / contain;
+          mask: url(../images/logo-besso-shiromae.png) no-repeat center / contain;
 }
-.logo-svg text { fill: currentColor; }
 
 /* ヘッダー用ロゴ */
 .brand-logo {
