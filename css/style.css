@@ -1656,6 +1656,101 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ========================================
+   旅行予約キャンセル保険（PR）
+======================================== */
+.cancel-ins {
+  max-width: 720px;
+  margin: 72px auto 0;
+  padding: 40px clamp(20px, 4vw, 48px);
+  background: var(--c-washi);
+  border: 1px solid var(--c-hai-light);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.cancel-ins-banner {
+  display: inline-block;
+  max-width: 100%;
+  transition: opacity 0.3s;
+}
+.cancel-ins-banner:hover { opacity: 0.82; }
+.cancel-ins-banner img {
+  display: block;
+  width: 100%;
+  max-width: 468px;
+  height: auto;
+}
+
+.cancel-ins-title {
+  font-family: var(--f-mincho);
+  font-size: clamp(17px, 2vw, 21px);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin: 28px 0 14px;
+  color: var(--c-sumi);
+}
+
+.cancel-ins-text {
+  font-size: 14px;
+  line-height: 2;
+  color: var(--c-sumi-soft);
+  text-align: left;
+}
+
+.cancel-ins-note {
+  margin: 24px 0 0;
+  padding: 20px 0 0;
+  border-top: 1px solid var(--c-hai-light);
+  list-style: none;
+  text-align: left;
+}
+.cancel-ins-note li {
+  position: relative;
+  padding-left: 1.3em;
+  font-size: 12px;
+  line-height: 1.9;
+  color: var(--c-hai);
+}
+.cancel-ins-note li + li { margin-top: 6px; }
+.cancel-ins-note li::before {
+  content: '※';
+  position: absolute;
+  left: 0;
+}
+
+.cancel-ins-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 28px;
+  padding: 14px 36px;
+  font-family: var(--f-mincho);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--c-sumi);
+  background: transparent;
+  border: 1px solid var(--c-kin-deep);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.cancel-ins-cta:hover {
+  background: linear-gradient(135deg, var(--c-kin-deep) 0%, var(--c-kin) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(201, 169, 97, 0.28);
+}
+.cancel-ins-cta .arrow {
+  font-family: var(--f-cormo);
+  font-style: italic;
+  font-size: 16px;
+}
+
+@media (max-width: 700px) {
+  .cancel-ins { margin-top: 56px; padding: 32px 20px; }
+  .cancel-ins-text { font-size: 13px; }
+}
+
+/* ========================================
    FAQ
 ======================================== */
 .faq { background: var(--c-washi); }
